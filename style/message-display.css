@@ -31,3 +31,15 @@
   cursor: pointer;
   text-shadow: 0 0 7px white;
 }
+
+@media only screen and (max-width: 900px) {
+  .message-display {
+    justify-content: space-evenly;
+  }
+  .message-display > .title {
+    font-size: 50px;
+  }
+  .message-display > .para {
+    font-size: 30px;
+  }
+}
