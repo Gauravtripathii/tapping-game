@@ -19,11 +19,17 @@ function hideMessage() {
 }
 
 function showMessage(t, p) {
+  var container = document.querySelector(".container");
+  if (container.offsetWidth < 900) {
+    title.style.fontSize = "50px";
+    para.style.fontSize = "30px";
+  } else {
+    title.style.fontSize = "100px";
+    para.style.fontSize = "40px";
+  }
+  author.style.fontSize = "20px";
   div.style.height = "100vh";
   div.style.width = "100vw";
-  title.style.fontSize = "100px";
-  para.style.fontSize = "40px";
-  author.style.fontSize = "20px";
   title.innerHTML = t;
   para.innerHTML = p;
   console.log(title);
@@ -61,7 +67,6 @@ function move() {
   var circle_q = circle.style;
   circle_q.right = `${right}%`;
   circle_q.bottom = `${bottom}%`;
-  console.log(left, right);
 }
 
 // clearInterval(movement_interval)
