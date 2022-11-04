@@ -1,0 +1,23 @@
+:root {
+    /* dimensions */
+    --circle-dim: 100px;
+
+    /* colors */
+    --gaming-area-bg: #432C7A;
+    --details-bg: #80489C;
+    --circle-color: #FF8FB1;
+    --text-color-p: #FCE2DB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}

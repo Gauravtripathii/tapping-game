@@ -1,0 +1,17 @@
+.container > .gaming-area {
+  background-color: var(--gaming-area-bg);
+  width: 69%;
+  height: 100%;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  height: var(--circle-dim);
+  width: var(--circle-dim);
+  border-radius: 50%;
+  right: 50%;
+  bottom: 50%;
+  /* transform: translate(50%, 50%); */
+  border: 3px solid var(--circle-color);
+}

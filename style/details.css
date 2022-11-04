@@ -1,0 +1,9 @@
+.container > .details {
+  background-color: var(--details-bg);
+  width: 30%;
+  height: 100%;
+}
+
+.details > .score {
+  color: var(--text-color-p);
+}
