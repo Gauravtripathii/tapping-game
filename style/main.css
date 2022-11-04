@@ -1,18 +1,22 @@
 :root {
-    /* dimensions */
-    --circle-dim: 100px;
+  /* dimensions */
+  --circle-dim: 100px;
 
-    /* colors */
-    --gaming-area-bg: #432C7A;
-    --details-bg: #80489C;
-    --circle-color: #FF8FB1;
-    --text-color-p: #FCE2DB;
+  /* colors */
+  --gaming-area-bg: #432c7a;
+  --details-bg: #80489c;
+  --circle-color: #ff8fb1;
+  --text-color-p: #fce2db;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  position: relative;
 }
 
 .container {

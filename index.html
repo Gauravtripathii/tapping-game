@@ -5,23 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/message-display.css" />
     <link rel="stylesheet" href="./style/gaming-area.css" />
     <link rel="stylesheet" href="./style/details.css" />
     <title>Tapping Game</title>
   </head>
   <body>
+    <div class="message-display">
+      <div class="title"></div>
+      <div class="para"></div>
+    </div>
     <div class="container">
       <div class="gaming-area">
         <div class="circle"></div>
       </div>
       <div class="details">
-        <div class="score">
-            Score : <span class="score-counter">0</span>
+        <div class="score">Score : <span class="score-counter">0</span></div>
+        <div class="settings">
+            <span class="easy">easy</span>
+            <span class="medium">medium</span>
+            <span class="hard">hard</span>
         </div>
       </div>
     </div>
 
+    <script src="./script/index.js"></script>
     <script src="./script/score-count.js"></script>
-    <script src="./script/circle-movement.js"></script>
+    <!-- <script src="./script/circle-movement.js"></script> -->
+    <!-- <script src="./script/message-display.js"></script> -->
   </body>
 </html>
