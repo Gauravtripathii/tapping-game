@@ -5,11 +5,17 @@ var data = {
   para: "a game inspired by asian parents!",
 };
 
+var author = document.querySelector(".author");
+author.addEventListener("click", () => {
+  window.open("https://www.linkedin.com/in/gaurav-kumar-tripathii/", "_blank");
+});
+
 function hideMessage() {
   div.style.height = "0";
   div.style.width = "0";
   title.style.fontSize = "0";
   para.style.fontSize = "0";
+  author.style.fontSize = "0";
 }
 
 function showMessage(t, p) {
@@ -17,6 +23,7 @@ function showMessage(t, p) {
   div.style.width = "100vw";
   title.style.fontSize = "100px";
   para.style.fontSize = "40px";
+  author.style.fontSize = "20px";
   title.innerHTML = t;
   para.innerHTML = p;
   console.log(title);
