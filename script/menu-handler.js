@@ -9,7 +9,9 @@ close_menu.addEventListener("click", () => {
 });
 
 open_menu.addEventListener("click", () => {
-  menu.style.width = "40%";
+  if (document.querySelector(".container").offsetWidth > 900)
+    menu.style.width = "40%";
+  menu.style.width = "100%";
   open_menu.style.fontSize = "0";
   close_menu.style.fontSize = "40px";
 });
