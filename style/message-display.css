@@ -4,7 +4,7 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
-  z-index: 1;
+  z-index: 4;
   transition: 0.5s ease;
   display: flex;
   flex-direction: column;
@@ -24,12 +24,6 @@
   font-size: 40px;
   transition: 0.5s ease;
   text-align: center;
-}
-
-.author {
-  font-size: 20px;
-  cursor: pointer;
-  text-shadow: 0 0 7px white;
 }
 
 @media only screen and (max-width: 900px) {

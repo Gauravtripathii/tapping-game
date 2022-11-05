@@ -5,17 +5,11 @@ var data = {
   para: "a game inspired by asian parents!",
 };
 
-var author = document.querySelector(".author");
-author.addEventListener("click", () => {
-  window.open("https://www.linkedin.com/in/gaurav-kumar-tripathii/", "_blank");
-});
-
 function hideMessage() {
   div.style.height = "0";
   div.style.width = "0";
   title.style.fontSize = "0";
   para.style.fontSize = "0";
-  author.style.fontSize = "0";
 }
 
 function showMessage(t, p) {
@@ -27,7 +21,6 @@ function showMessage(t, p) {
     title.style.fontSize = "100px";
     para.style.fontSize = "40px";
   }
-  author.style.fontSize = "20px";
   div.style.height = "100vh";
   div.style.width = "100vw";
   title.innerHTML = t;
@@ -73,6 +66,17 @@ function move() {
 gaming_area.addEventListener("click", (event) => {
   if (event.srcElement.className === "gaming-area") {
     clearInterval(movement_interval);
-    showMessage("You have failed, again!", "you are a disgrace!");
+    var fail = [
+      {
+        title: "You have failed, again!",
+        para: "you are a disgrace!",
+      },
+      {
+        title: "You loose, like you always do!",
+        para: "2d game or life!",
+      },
+    ];
+    var i = Math.floor(Math.random() * fail.length);
+    showMessage(fail[i].title, fail[i].para);
   }
 });
